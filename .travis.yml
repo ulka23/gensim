@@ -68,7 +68,7 @@ matrix:
 
 install:
   - sudo apt-get install -y gdb libblas-dev liblapack-dev gfortran libjpeg-dev zlib1g-dev # install gdb
-  - pip install -U cython numpy tox pytest utils https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
+  - pip install cython numpy tox pytest utils https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
   - python setup.py install
   
 
