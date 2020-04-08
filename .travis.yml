@@ -67,8 +67,8 @@ matrix:
       env: TOXENV="py36-linux"
 
 install:
-  - sudo apt-get install -y gdb libblas-dev liblapack-dev gfortran  # install gdb
-  - pip install cython tox pytest --ignore-installed
+  - sudo apt-get install -y gdb libblas-dev liblapack-dev gfortran libjpeg-dev zlib1g-dev # install gdb
+  - pip install cython tox pytest tensorflow Pillow==2.2.2 --ignore-installed
   - python setup.py install
   
 
