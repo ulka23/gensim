@@ -68,7 +68,7 @@ matrix:
 
 install:
   - sudo apt-get install -y build-essential gdb libblas-dev liblapack-dev gfortran libjpeg-dev zlib1g-dev
-  - pip install --upgrade tox https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl boto boto3 utils
+  - pip install --upgrade setuptools ez_setup tox https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl boto boto3 utils
   - python setup.py install
   
 
