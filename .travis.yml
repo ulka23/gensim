@@ -71,7 +71,7 @@ install:
   - easy_install cython
   - pip3 install --upgrade setuptools ez_setup cython cython-compiler numpy tox https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl boto boto3 utils --no-cache-dir
   - pip3 install --upgrade certifi --no-cache-dir #to solve error in AMD
-  - pip3 install -e .
+  #- pip3 install -e .
 
 
 
