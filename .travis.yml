@@ -14,31 +14,31 @@ env:
 
 matrix:
   include:
-    - os: linux
-      arch: amd64
-      python: '3.6'
-      env: TOXENV="flake8,flake8-docs"
+    #- os: linux
+    #  arch: amd64
+    #  python: '3.6'
+    #  env: TOXENV="flake8,flake8-docs"
 
-    - os: linux
-      arch: amd64
-      python: '3.8'
-      env:
-        - TOXENV="py38-linux"
-      dist: bionic
+    #- os: linux
+    #  arch: amd64
+    #  python: '3.8'
+    #  env:
+    #    - TOXENV="py38-linux"
+    #  dist: bionic
 
-    - os: linux
-      arch: amd64
-      python: '3.7'
-      env:
-        - TOXENV="py37-linux"
-        - BOTO_CONFIG="/dev/null"
-      dist: xenial
-      sudo: true
+    #- os: linux
+    #  arch: amd64
+    #  python: '3.7'
+    #  env:
+    #    - TOXENV="py37-linux"
+    #    - BOTO_CONFIG="/dev/null"
+    #  dist: xenial
+    #  sudo: true
 
-    - os: linux
-      arch: amd64
-      python: '3.6'
-      env: TOXENV="py36-linux"
+    #- os: linux
+    #  arch: amd64
+    #  python: '3.6'
+    #  env: TOXENV="py36-linux"
 
     - os: linux
       arch: ppc64le
